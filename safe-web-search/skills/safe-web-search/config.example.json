@@ -1,0 +1,44 @@
+{
+  "security_level": "medium",
+  "max_results_per_search": 10,
+  "daily_search_limit": 50,
+  "blocked_domains": [
+    ".*\\.onion$",
+    ".*\\.xyz$",
+    ".*\\.top$",
+    ".*\\.win$",
+    ".*\\.bid$",
+    ".*\\.loan$",
+    ".*malware.*",
+    ".*hack.*",
+    ".*pirate.*"
+  ],
+  "allowed_content_types": [
+    "text/html",
+    "application/json",
+    "text/plain",
+    "application/xml"
+  ],
+  "require_https": true,
+  "user_agent": "SafeWebSearch/1.0 (OpenClaw Security Bot)",
+  "timeout_seconds": 30,
+  "trusted_sources": [
+    "wikipedia.org",
+    "github.com",
+    "stackoverflow.com",
+    "developer.mozilla.org",
+    "docs.python.org",
+    "learn.microsoft.com"
+  ],
+  "content_filters": {
+    "remove_scripts": true,
+    "remove_iframes": true,
+    "remove_events": true,
+    "max_content_length": 100000
+  },
+  "monitoring": {
+    "log_searches": true,
+    "alert_on_anomaly": true,
+    "retention_days": 7
+  }
+}
